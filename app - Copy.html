@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Studio Appointment</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+    <div class="banner">
+        <nav>
+            <ul>
+              <li><a href="hair.html">HOME</a></li>
+              <li><a href="features.html">FEATURES</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+                <li><a href="app.html">APPOINTMENT</a></li>
+                <li><a href="meetus.html">MEET US</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="title-text">
+            <p> APPOINTMENT</p>
+            <h1>Hair Studio Appointment</h1>
+        </div>
+    
+
+        <form>
+            <div class="form-group">
+                <label for="clientName"><strong>Client Name:</strong></label>
+                <input type="text" id="clientName" name="clientName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="appointmentDate"><strong>Appointment Date:</strong></label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service"><strong>Service:</strong></label>
+                <select id="service" name="service" required>
+                    <option value="haircut">Haircut</option>
+                    <option value="coloring">Hair Coloring</option>
+                    <option value="styling">Hair Styling</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="stylist"><strong>Stylist:</strong></label>
+                <input type="text" id="stylist" name="stylist" required>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th colspan="2">Availability</th>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td><input type="radio" name="time" value="10:00 AM"></td>
+                    <td><input type="radio" name="time" value="10:30 AM"></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td><input type="radio" name="time" value="11:00 AM"></td>
+                    <td><input type="radio" name="time" value="11:30 AM"></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+
+            <div class="form-group">
+                <button type="submit">Book Appointment</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
